@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <style>
+        body {
+            /* padding: 90px; */
+            height: 185vh;
+            display: flex;
+            justify-content: center;
+            color: rgb(44, 9, 9);
+            font-family: 'Raleway', sans-serif;
+            background-image: url("grad.jpeg");
+            text-align: left;
+            align-items: center;
+            text-size-adjust: 90%;
+            font-family: 'Dancing Script', cursive;
+            font-family: 'Lobster', cursive;
+        }
+        
+        form {
+            max-width: 600px;
+            width: 80%;
+            margin-left: 20px;
+            background: linear-gradient(to right top, rgba(233, 18, 233, 0.5), rgba(233, 26, 95, 0.5));
+        }
+        
+        input {
+            display: flex;
+            padding: 10 60px;
+            text-align: center;
+            margin-left: 25%;
+            margin-bottom: 1%;
+        }
+        
+        button {
+            color: black;
+            background-color: rgb(222, 135, 196);
+            align-items: 50%;
+            margin-left: 45%;
+            size: 40%;
+            border-color: rgb(255, 0, 170);
+        }
+        
+        h1 {
+            text-align: center;
+            font-family: 'Dancing Script', cursive;
+        }
+    </style>
+
+    <form method="POST">
+        <h1>REGISTRATION FORM</h1>
+        {{ form.as_p}}
+        <button>REGISTER</button>
+    </form>
+</body>
+
+</html>
